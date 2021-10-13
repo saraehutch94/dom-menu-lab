@@ -29,3 +29,8 @@ const topMenuEl = document.getElementById("top-menu");
 
 topMenuEl.style.height = "100%";
 // console.log(topMenuEl);
+
+// Task 2.2
+
+topMenuEl.setAttribute("class", "flex-around");
+// console.log(topMenuEl);
