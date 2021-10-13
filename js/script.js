@@ -32,5 +32,5 @@ topMenuEl.style.height = "100%";
 
 // Task 2.2
 
-topMenuEl.setAttribute("class", "flex-around");
-// console.log(topMenuEl);
+topMenuEl.style.background = "var(--top-menu-bg)";
+console.log(topMenuEl);
