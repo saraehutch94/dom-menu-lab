@@ -1,3 +1,12 @@
+// Menu data structure
+
+var menuLinks = [
+    {text: 'about', href: '/about'},
+    {text: 'catalog', href: '/catalog'},
+    {text: 'orders', href: '/orders'},
+    {text: 'account', href: '/account'},
+  ];
+
 // DOM Menu Lab Tasks: Part 1
 
 // Task 1.0
@@ -39,3 +48,5 @@ console.log(topMenuEl);
 
 topMenuEl.setAttribute("class", "flex-around");
 // console.log(topMenuEl);
+
+// Task 3.0 --> copied to top of this script.js file
