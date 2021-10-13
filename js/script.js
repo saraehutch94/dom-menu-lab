@@ -20,3 +20,7 @@ mainEl.innerHTML = "<h1>SEI Rocks!</h1>";
 mainEl.setAttribute("class", "flex-ctr");
 // console.log(mainEl);
 
+// Task 2.0
+
+const topMenuEl = document.getElementById("top-menu");
+// console.log(topMenuEl);
