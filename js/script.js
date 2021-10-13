@@ -50,3 +50,13 @@ topMenuEl.setAttribute("class", "flex-around");
 // console.log(topMenuEl);
 
 // Task 3.0 --> copied to top of this script.js file
+
+// Task 3.1
+
+for (let link of menuLinks) {
+    let anchor = document.createElement("a");
+    anchor.setAttribute("href", link.href);
+    anchor.innerHTML = link.text;
+    topMenuEl.appendChild(anchor);
+    console.log(anchor);
+}
