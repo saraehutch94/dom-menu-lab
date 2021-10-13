@@ -14,3 +14,9 @@ mainEl.style.backgroundColor = "var(--main-bg)";
 
 mainEl.innerHTML = "<h1>SEI Rocks!</h1>";
 // console.log(mainEl);
+
+// Task 1.3
+
+mainEl.setAttribute("class", "flex-ctr");
+// console.log(mainEl);
+
