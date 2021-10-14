@@ -122,4 +122,17 @@ const topMenuLinks = document.querySelectorAll("a");
 // console.log(topMenuLinks);
 
 const showingSubMenu = false;
-console.log(showingSubMenu);
+// console.log(showingSubMenu);
+
+// Task 5.2
+
+topMenuEl.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  if (evt.target.tagName !== "A") return;
+  console.log(evt.target.textContent);
+  // console.log(evt);
+  // console.log(evt.target);
+  // console.log(evt.target.tagName);
+});
+
+// Task 5.3
