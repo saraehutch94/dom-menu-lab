@@ -157,7 +157,7 @@ topMenuEl.addEventListener("click", function(evt) {
     showingSubMenu = false;
   }
 
-console.log(currentLink.subLinks);
+// console.log(currentLink.subLinks);
 
   if (showingSubMenu === true) {
     buildSubMenu(currentLink.subLinks);
@@ -166,12 +166,14 @@ console.log(currentLink.subLinks);
     subMenuEl.style.top = "0";
   }
 
+  // console.log(subMenuEl);
+
   function buildSubMenu (clickedLink) {
     // subMenuEl = "";
     for (link of clickedLink) {
       let newAnchor = document.createElement("a");
       newAnchor.setAttribute("href", link.href);
-      newAnchor.textContent = link.name;
+      newAnchor.textContent = link.text;
       subMenuEl.append(newAnchor);
       console.log(newAnchor);
     }
