@@ -71,4 +71,9 @@ const subMenuEl = document.getElementById("sub-menu");
 // Task 4.1
 
 subMenuEl.style.height = "100%";
+// console.log(subMenuEl);
+
+// Task 4.2
+
+subMenuEl.style.backgroundColor = "var(--sub-menu-bg)";
 console.log(subMenuEl);
