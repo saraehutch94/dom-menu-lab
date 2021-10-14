@@ -177,20 +177,23 @@ topMenuEl.addEventListener("click", function(evt) {
     }
   }
 
-console.log(subMenuEl.textContent);
+// console.log(subMenuEl)
 
 // console.log(showingSubMenu);
 
 });
 
-// Task 5.3
-// (above)
+// Task 5.3 - 5.8 --> above
 
-// Task 5.4
-// (above)
+// Task 6.0
 
-// Task 5.5
-// (above)
-
-// Task 5.6
-// (above)
+subMenuEl.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  if (evt.target.tagName !== "A") return;
+  // console.log(evt.target.textContent);
+  showingSubMenu = false;
+  subMenuEl.style.top = "0";
+  for (links of topMenuLinks) {
+    links.classList.remove("active");
+  }
+});
