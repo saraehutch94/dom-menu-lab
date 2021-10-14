@@ -86,4 +86,11 @@ subMenuEl.setAttribute("class", "flex-around");
 // Task 4.4
 
 subMenuEl.style.position = "absolute";
-console.log(subMenuEl);
+// console.log(subMenuEl);
+
+// Task 4.5
+
+subMenuEl.style.top = "0";
+// console.log(subMenuEl);
+
+
