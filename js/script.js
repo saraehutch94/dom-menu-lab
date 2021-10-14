@@ -129,20 +129,27 @@ let showingSubMenu = false;
 topMenuEl.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (evt.target.tagName !== "A") return;
-  console.log(evt.target.textContent);
-  // console.log(evt);
-  // console.log(evt.target);
-  // console.log(evt.target.tagName);
+  // console.log(evt.target.textContent);
   if (evt.target.classList.contains("active")) {
     evt.target.classList.remove("active");
     showingSubMenu = false;
     subMenuEl.style.top = "0";
     return;
   }
+
   for (links of topMenuLinks) {
-    links.classList.remove("class");
+    links.classList.remove("active");
   }
+
   evt.target.setAttribute("class", "active");
+
+  const linkObject = evt.target;
+  
+  for (link of menuLink) {
+    if (linkObject.textContent === link.text && link.hasOwnProperty("subLinks")) {
+      
+  }
+
 });
 
 // Task 5.3
@@ -152,4 +159,7 @@ topMenuEl.addEventListener("click", function(evt) {
 // (above)
 
 // Task 5.5
+// (above)
+
+// Task 5.6
 // (above)
