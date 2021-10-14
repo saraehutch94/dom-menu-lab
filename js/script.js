@@ -187,7 +187,7 @@ topMenuEl.addEventListener("click", function(evt) {
 
 // Task 5.3 - 5.8 --> above
 
-// Task 6.0
+// Task 6.0 - 6.4 --> below
 
 subMenuEl.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -201,5 +201,5 @@ subMenuEl.addEventListener("click", function(evt) {
   }
 
   mainEl.innerHTML = `<h1>${evt.target.textContent}</h1>`;
-  
+
 });
