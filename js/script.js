@@ -88,7 +88,7 @@ for (let link of menuLinks) {
 
 // Task 4.0
 
-const subMenuEl = document.getElementById("sub-menu");
+let subMenuEl = document.getElementById("sub-menu");
 // console.log(subMenuEl);
 
 // Task 4.1
@@ -157,9 +157,28 @@ topMenuEl.addEventListener("click", function(evt) {
     showingSubMenu = false;
   }
 
+console.log(currentLink.subLinks);
+
+  if (showingSubMenu === true) {
+    buildSubMenu(currentLink.subLinks);
+    subMenuEl.style.top = "100%";
+  } else {
+    subMenuEl.style.top = "0";
+  }
+
+  function buildSubMenu (clickedLink) {
+    // subMenuEl = "";
+    for (link of clickedLink) {
+      let newAnchor = document.createElement("a");
+      newAnchor.setAttribute("href", link.href);
+      newAnchor.textContent = link.name;
+      subMenuEl.append(newAnchor);
+      console.log(newAnchor);
+    }
+  }
+
+
 // console.log(showingSubMenu);
-
-
 
 });
 
