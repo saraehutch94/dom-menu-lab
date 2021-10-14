@@ -81,7 +81,7 @@ for (let link of menuLinks) {
     anchor.setAttribute("href", link.href);
     anchor.innerHTML = link.text;
     topMenuEl.appendChild(anchor);
-    // console.log(anchor);
+    console.log(anchor);
 }
 
 // DOM Menu Lab: Part 2:
@@ -121,7 +121,7 @@ subMenuEl.style.top = "0";
 const topMenuLinks = document.querySelectorAll("a");
 // console.log(topMenuLinks);
 
-const showingSubMenu = false;
+let showingSubMenu = false;
 // console.log(showingSubMenu);
 
 // Task 5.2
@@ -133,13 +133,15 @@ topMenuEl.addEventListener("click", function(evt) {
   // console.log(evt);
   // console.log(evt.target);
   // console.log(evt.target.tagName);
-  if (evt.target.hasClass("active")) {
+  if (evt.target.classList.contains("active")) {
     evt.target.classList.remove("active");
     showingSubMenu = false;
     subMenuEl.style.top = "0";
     return;
   }
-  topMenuLinks.classList.remove("active");
+  for (links of topMenuLinks) {
+    links.classList.remove("class");
+  }
   evt.target.setAttribute("class", "active");
 });
 
