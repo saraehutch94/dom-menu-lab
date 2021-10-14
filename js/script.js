@@ -139,7 +139,11 @@ topMenuEl.addEventListener("click", function(evt) {
     subMenuEl.style.top = "0";
     return;
   }
+  topMenuLinks.classList.remove("active");
 });
 
 // Task 5.3
+// (above)
+
+// Task 5.4
 // (above)
