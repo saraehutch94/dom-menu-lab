@@ -133,6 +133,13 @@ topMenuEl.addEventListener("click", function(evt) {
   // console.log(evt);
   // console.log(evt.target);
   // console.log(evt.target.tagName);
+  if (evt.target.hasClass("active")) {
+    evt.target.classList.remove("active");
+    showingSubMenu = false;
+    subMenuEl.style.top = "0";
+    return;
+  }
 });
 
 // Task 5.3
+// (above)
