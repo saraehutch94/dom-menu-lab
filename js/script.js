@@ -166,19 +166,18 @@ topMenuEl.addEventListener("click", function(evt) {
     subMenuEl.style.top = "0";
   }
 
-  // console.log(subMenuEl);
-
   function buildSubMenu (clickedLink) {
-    // subMenuEl = "";
+    subMenuEl.textContent = "";
     for (link of clickedLink) {
       let newAnchor = document.createElement("a");
       newAnchor.setAttribute("href", link.href);
       newAnchor.textContent = link.text;
       subMenuEl.append(newAnchor);
-      console.log(newAnchor);
+      // console.log(newAnchor);
     }
   }
 
+console.log(subMenuEl.textContent);
 
 // console.log(showingSubMenu);
 
