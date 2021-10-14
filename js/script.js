@@ -143,6 +143,8 @@ topMenuEl.addEventListener("click", function(evt) {
     links.classList.remove("active");
   }
 
+  mainEl.innerHTML = `<h1>${evt.target.textContent}</h1>`;
+
   evt.target.setAttribute("class", "active");
 
   currentLink = menuLinks.find(function(link) {
@@ -198,6 +200,6 @@ subMenuEl.addEventListener("click", function(evt) {
     links.classList.remove("active");
   }
 
-  mainEl.innerHTML = evt.target.textContent;
-
+  mainEl.innerHTML = `<h1>${evt.target.textContent}</h1>`;
+  
 });
