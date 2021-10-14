@@ -65,3 +65,5 @@ for (let link of menuLinks) {
 
 // Task 4.0
 
+const subMenuEl = document.getElementById("sub-menu");
+console.log(subMenuEl);
