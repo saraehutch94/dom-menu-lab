@@ -66,4 +66,9 @@ for (let link of menuLinks) {
 // Task 4.0
 
 const subMenuEl = document.getElementById("sub-menu");
+// console.log(subMenuEl);
+
+// Task 4.1
+
+subMenuEl.style.height = "100%";
 console.log(subMenuEl);
