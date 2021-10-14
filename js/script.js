@@ -119,5 +119,7 @@ subMenuEl.style.top = "0";
 // Task 5.0 --> updated menuLinks array above
 
 const topMenuLinks = document.querySelectorAll("a");
-console.log(topMenuLinks);
+// console.log(topMenuLinks);
 
+const showingSubMenu = false;
+console.log(showingSubMenu);
