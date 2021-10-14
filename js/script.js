@@ -7,7 +7,7 @@ var menuLinks = [
     {text: 'account', href: '/account'},
   ];
 
-// DOM Menu Lab Tasks: Part 1
+// DOM Menu Lab: Part 1
 
 // Task 1.0
 
@@ -42,7 +42,7 @@ topMenuEl.style.height = "100%";
 // Task 2.2
 
 topMenuEl.style.background = "var(--top-menu-bg)";
-console.log(topMenuEl);
+// console.log(topMenuEl);
 
 // Task 2.3
 
@@ -58,5 +58,10 @@ for (let link of menuLinks) {
     anchor.setAttribute("href", link.href);
     anchor.innerHTML = link.text;
     topMenuEl.appendChild(anchor);
-    console.log(anchor);
+    // console.log(anchor);
 }
+
+// DOM Menu Lab: Part 2:
+
+// Task 4.0
+
