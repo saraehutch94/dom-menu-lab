@@ -83,3 +83,7 @@ subMenuEl.style.backgroundColor = "var(--sub-menu-bg)";
 subMenuEl.setAttribute("class", "flex-around");
 // console.log(subMenuEl);
 
+// Task 4.4
+
+subMenuEl.style.position = "absolute";
+console.log(subMenuEl);
