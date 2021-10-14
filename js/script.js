@@ -124,6 +124,8 @@ const topMenuLinks = document.querySelectorAll("a");
 let showingSubMenu = false;
 // console.log(showingSubMenu);
 
+let currentLink;
+
 // Task 5.2
 
 topMenuEl.addEventListener("click", function(evt) {
@@ -143,12 +145,21 @@ topMenuEl.addEventListener("click", function(evt) {
 
   evt.target.setAttribute("class", "active");
 
-  const linkObject = evt.target;
-  
-  for (link of menuLink) {
-    if (linkObject.textContent === link.text && link.hasOwnProperty("subLinks")) {
-      
+  currentLink = menuLinks.find(function(link) {
+    return link.text === evt.target.textContent;
+  });
+
+  // console.log(currentLink); 
+
+  if (currentLink.hasOwnProperty("subLinks")) {
+    showingSubMenu = true;
+  } else {
+    showingSubMenu = false;
   }
+
+// console.log(showingSubMenu);
+
+
 
 });
 
