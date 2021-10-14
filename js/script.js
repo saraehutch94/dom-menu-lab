@@ -140,10 +140,14 @@ topMenuEl.addEventListener("click", function(evt) {
     return;
   }
   topMenuLinks.classList.remove("active");
+  evt.target.setAttribute("class", "active");
 });
 
 // Task 5.3
 // (above)
 
 // Task 5.4
+// (above)
+
+// Task 5.5
 // (above)
